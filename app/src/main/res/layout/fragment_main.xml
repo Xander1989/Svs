@@ -8,9 +8,36 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.app.MainActivity$PlaceholderFragment">
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_launcher"
+        android:contentDescription="@string/image_title"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:singleLine="false"
+        android:text="@string/button_new"
+        android:onClick="newFactuur"
+        android:layout_marginBottom="52dp"
+        android:layout_above="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_resume"
+        android:id="@+id/button2"
+        android:onClick="terms"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginTop="48dp" />
+
 
 </RelativeLayout>

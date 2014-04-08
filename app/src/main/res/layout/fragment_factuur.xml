@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.app.factuurActivity$PlaceholderFragment">
+
+
+    <TextView
+        android:text="@string/verhuiswagens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verhuiswagen"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/spinner1" />
+    <TextView
+        android:text="@string/verhuizer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verhuizer"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/verhuiswagen"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:text="@string/verhuislift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verhuislift"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/verhuizer"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:text="@string/aanhanger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aanhanger"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/verhuislift"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:text="@string/kilometers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kilometers"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/aanhanger"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:text="@string/weekendtarief"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weekendtarief"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/kilometers"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:entries="@array/verhuiswagen"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="38dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:entries="@array/verhuiswagen"
+        android:layout_alignTop="@+id/verhuizer"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_alignStart="@+id/spinner1" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:entries="@array/verhuiswagen"
+        android:layout_alignTop="@+id/verhuislift"
+        android:layout_alignLeft="@+id/spinner2"
+        android:layout_alignStart="@+id/spinner2" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:entries="@array/verhuiswagen"
+        android:layout_alignTop="@+id/aanhanger"
+        android:layout_alignLeft="@+id/spinner3"
+        android:layout_alignStart="@+id/spinner3" />
+
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/invoer"
+        android:layout_alignTop="@+id/kilometers"
+        android:layout_alignLeft="@+id/spinner4"
+        android:layout_alignStart="@+id/spinner4" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:layout_alignTop="@+id/weekendtarief"
+        android:layout_alignLeft="@+id/invoer"
+        android:layout_alignStart="@+id/invoer" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bereken"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

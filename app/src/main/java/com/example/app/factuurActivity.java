@@ -22,26 +22,9 @@ public class factuurActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_factuur);
 
-        addItemsOnSpinner2();
         addListenerOnButton();
 
     }
-
-    // add items into spinner dynamically
-    public void addItemsOnSpinner2() {
-
-        spinner2 = (Spinner) findViewById(R.id.spinner2);
-        List<String> list = new ArrayList<String>();
-        list.add("list 1");
-        list.add("list 2");
-        list.add("list 3");
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_spinner_item, list);
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner2.setAdapter(dataAdapter);
-    }
-
-
 
     // get the selected dropdown list value
     public void addListenerOnButton() {

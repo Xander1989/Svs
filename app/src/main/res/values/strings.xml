@@ -8,14 +8,13 @@
     <string name="button_resume">Terms and Conditions</string>
     <string name="image_title">Svs img </string>
     <string name="title_activity_factuur"> Factuur </string>
+    <string name="title_activity_terms"> Terms </string>
     <string name="verhuiswagens">Verhuiswagen</string>
     <string name="verhuizer">Verhuizer(s)</string>
     <string name="verhuislift">Verhuislift</string>
     <string name="aanhanger">Aanhanger</string>
     <string name="kilometers">Kilometers</string>
     <string name="weekendtarief">Weekend tarief</string>
-
-
 
     <string-array name="verhuiswagen">
         <item>0</item>
@@ -25,7 +24,69 @@
         <item>4</item>
         <item>5</item>
         <item>6</item>
-        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+    </string-array>
+
+    <string-array name="voorwaarden">
+        <item>Bij takelen is het noodzakelijk dat wij bij de hijsbalk kunnen, dit is uw verantwoordelijkheid. Takelen is ook altijd op eigen risico. Alle schades ten gevolge van takelen zijn volledig voor rekening van de opdrachtgever. Bij het gebruik van verhuisliften is uw inboedel wel verzekerd.</item>
+        <item>De inboedel van de klant dient transportwaardig verpakt te zijn (behalve bij full service). De inhoud van bijvoorbeeld een verhuisdoos dient zodanig ingepakt te zijn dat losse items elkaar niet kunnen beschadigen.</item>
+        <item>De klant zorgt voor voldoende parkeerplaats voor de verhuiswagens en aanhangers tenzij deze op uitdrukkelijk verzoek van de klant door Student Verhuis Service aangevraagd moet worden.</item>
+        <item>Student Verhuis Service kan niet aansprakelijk worden gehouden voor het verlies of diefstal van goederen van de opdrachtgever. De opdrachtgever dient bij de gehele verhuizing aanwezig te zijn om de veiligheid van de goederen te waarborgen. </item>
+        <item>Bij windsnelheden van meer dan 60km/uur behouden wij het recht verhuizingen met touw en blok of lift te verplaatsen naar een andere datum.</item>
+        <item>Alle dozen moeten goed gesloten zijn, deuren van kasten op slot, schuiven en losse planken moeten uit de kasten teneinde schade tijdens het transport te beperken (behalve bij full service).</item>
+        <item>Alle kostbaarheden zoals juwelen, geld etc. moet onder toezicht van de klant blijven.</item>
+        <item>Demontage en montage van meubels dient u op voorhand te melden en geschiedt op eigen risico.</item>
+        <item>De klant is verantwoordelijk voor de toegang tot de verhuishaak evenals een vrije doorgang voor de gehele inboedel die verhuisd dient te worden.</item>
+        <item>Er dient direct na de verhuizing contant of per pin afgerekend te worden, tenzij vooraf anders besproken.</item>
+        <item>Voor elke (volledige) verhuizing wordt bij één verhuizer minstens 1 uur afgerekend. Bij twee verhuizers minstens 2 uur en bij 3 verhuizers minstens 3 uur etc. Buiten Amsterdam wordt er vanaf Amsterdam tot terugkeer gerekend. Amsterdam Zuid-Oost valt buiten Amsterdam.</item>
+        <item>Op een verhuizing dient voldoende mankrachten aanwezig of besteld te zijn waaronder minstens 1 vakkundige verhuizer. Zware objecten zoals wasmachines dienen vakkundig met genoeg mankracht verhuisd te worden. We behouden ons het recht voor extra hulp aan te wenden indien er een tekort aan mankracht aanwezig is.</item>
+        <item>In geval van schade aan een verzekerd voorwerp, voortkomend uit een gewaarborgd risico, zal de schadevergoeding door de verzekeraars verschuldigd, de herstellings- of restauratiekosten der beschadigde voorwerpen, zoals voorzien in het expertiseverslag, niet te boven gaan. Hierdoor is elke waardevermindering die de goederen, na reparatie of restauratie zouden hebben, uitgesloten van de verzekering.</item>
+        <item>In geval de door onderhavige polis verzekerde voorwerpen een paar of een serie vormen verzekerd voor hun totale waarde, zal de waarde van elk voorwerp berekend worden door de totale waarde te delen door het aantal voorwerpen die het paar of de serie vormen.</item>
+        <item>In geval van schade dient de klant in aanwezigheid van de verhuizers deze schade te specificeren en dit schriftelijk laten vaststellen. De aansprakelijkheid vervalt na het vertrek van de verhuizers.</item>
+        <item>De inboedel die in de vrachtwagen geplaatst wordt door iemand anders dan het verhuispersoneel zijn niet verzekerd.</item>
+        <item>Klant mag onder geen beding aan schuldvergelijking doen. Factuur dient ten alle tijd te worden vereffend ongeacht of er schade is ontstaan. Eventuel schade dient achteraf afgehandeld te worden.</item>
+        <item>Student Verhuis Service behoudt zich het recht voor de overeenkomst te beëindigen zonder dat enige schadevergoeding kan worden geeist, in geval van overmacht, staking, lock-out, brand, oorlog, mobilisatie, overstroming en andere natuurrampen, of elke oorzaak van vertraging onafhankelijk van de wil van de verhuisfirma.</item>
+        <item>Kleine voorwerpen (lusters, staanlampen, potten, enz.) moeten op voorhand in gesloten dozen zijn verpakt (behalve bij full service). Indien dit niet het geval is, mogen verhuizers weigeren deze te verhuizen of gebeurt hun vervoer op eigen risico.</item>
+        <item>Elektronische toestellen dienen in originele dozen verpakt te zijn. Indien dit niet het geval is, mogen de verhuizers weigeren deze te verhuizen of gebeurt het vervoer op eigen risico. </item>
+        <item>De klant is verantwoordelijk voor het op de juiste manier borgen en loskoppelen van de wasmachine en trommel. In het geval dat dit niet gebeurd is, is Student Verhuis Service niet aansprakelijk voor eventuele schade aan de wasmachine en/of woning.</item>
+        <item>Matrassen dienen op voorhand ingepakt te zijn indien deze niet vies mogen worden. </item>
+        <item>De klant is verantwoordelijk voor de aanplanting die belemmering van de verhuizing kan veroorzaken (hoge hagen, grote bomen, etc...) Student Verhuis Service snoeit bomen noch hagen.</item>
+        <item>Indien er een grote voor- of achtertuin aanwezig is dient u Student Verhuis Service hiervan op te hoogte te stellen.</item>
+        <item>Wij behouden het recht om, in uitzonderlijke omstandigheden,onze planning te wijzigen teneinde een vlot verloop te kennen. Student Verhuis Service zal u bij wijziging daags tevoren telefonisch op de hoogte brengen.</item>
+        <item>Na 22:00 uur, op feestdagen en na 12 werkuren behouden wij ons recht de prijs van de werkuren met 100% te vermeerderen.</item>
+        <item>Als door onvoorziene omstandigheden het touw en blok of lift niet geplaatst kan worden, kan een andere lift en/of meer mankracht opgeroepen worden met de bijhorende extra kosten van het uurloon van deze extra mankracht(en) + wachttijden van de reeds aanwezige verhuizers in rekening gebracht.</item>
+        <item>Enige vertraging kan optreden door het uitlopen van een verhuizing, fileproblemen, slechte weersomstandigheden en vormen geen reden tot klacht noch schadevergoeding.</item>
+        <item>Er wordt verhuisd via de trap indien er geen andere mogelijkheid bestaat. Student Verhuis Service is in alle gevallen vrijgesteld van alle aansprakelijkheid bij schade aan trapzalen en inboedel.</item>
+        <item>Wij behouden ons het recht voor 20% meer van het totaal factuurbedrag aan te rekenen indien u de dag van de verhuizing niet betaald.</item>
+        <item>Nalatigheidinteresten en gerechtskosten zullen op u verhaald worden bij weigering van betaling.</item>
+        <item>Roest, oxidatie en waterschade door onder andere weersomstandigheden of andere oorzaken vallen niet onder aansprakelijkheid.</item>
+        <item>Wij werken steeds met 2 vakkundige verhuizers. Indien op uitdrukkelijk verzoek van de klant slecht 1 vakkundige verhuizer aanwezig is op een verhuizing dan valt elke geleden schade, veroorzaakt door onze man of derden aanwezig, niet onder de aansprakelijkheid van Student Verhuis Service.</item>
+        <item>Indien de klant beslist de verhuizing te annuleren dient dit minstens 48 uur van te voren aangegeven te worden, anders wordt er € 150,- in rekening gebracht.</item>
+        <item>Bij problemen of klachten verzoeken wij u geen discussie aan te gaan met de verhuizers, maar direct het bureau te contacteren, waarna indien mogelijk iemand van Student Verhuis Service zal langskomen.</item>
+        <item>Student Verhuis Service is niet aansprakelijk voor wachttijden veroorzaakt door verkeerd geparkeerde voertuigen, zelfs indien de verkeersborden door de firma zijn aangevraagd. De kosten voor de wachttijd zijn altijd ten laste van de klant.</item>
+        <item>Vrijstelling bij schade bedraagt € 450,- en is steeds voor rekening van klant.</item>
+        <item>De opdrachtgever is verantwoordelijk voor het beschermen van alle vloerdelen waar inboedel overeen verhuisd dient te worden. Houten en stenen vloeren zijn fragiel en dienen door de opdrachtgever afdoende beschermd te worden. Schade aan vloerdelen zijn altijd op eigen risico van de opdrachtgever.</item>
+        <item>Opdrachtnemer heeft door het aanvaarden van de overeenkomst van opdracht een inspanningsverbintenis jegens opdrachtgever.</item>
+        <item>Opdrachtnemer is niet aansprakelijk voor enigerlei schade jegens opdrachtgever, indien deze schade is ontstaan tengevolge van het verstrekken door opdrachtgever van onjuiste informatie en/of ondeugdelijke materialen.</item>
+        <item>Opdrachtnemer sluit iedere aansprakelijkheid jegens opdrachtgever uit, tenzij deze bewijst dat enigerlei schade is ontstaan tengevolge van het niet, dan wel onjuist uitvoeren van de opdracht, veroorzaakt door de opzet en/of grove nalatigheid van opdrachtnemer.</item>
+        <item>Opdrachtnemer aanvaardt geen enkele aansprakelijkheid jegens anderen dan opdrachtgever, en wordt door opdrachtgever gevrijwaard voor de financiële gevolgen van eventuele dergelijke aanspraken van derden. Opdrachtnemer is nimmer aansprakelijk voor gevolgschade, gederfde winst, gemiste besparingen en welke schade dan ook door bedrijfsstagnatie van opdrachtgever.</item>
+        <item>De eventuele aansprakelijkheid van opdrachtnemer is beperkt tot de omvang van het voor de uitvoering der opdracht overeengekomen honorarium, dan wel indien de verzekerde som waarvoor door opdrachtnemer een beroeps c. q. bedrijfsaansprakelijkheidsverzekering is afgesloten, lager is dan het voor de uitvoering der opdracht overeengekomen honorarium en/of het schadebedrag, de verzekerde som.</item>
+        <item>Student Verhuis Service kan nooit aansprakelijk gesteld worden uit hoofde van materiële of lichamelijke schade, aan of door de klant of aan of door zijn helpers toegebracht aan wie ook, zelfs niet indien het schadegeval voordoet ter gelegenheid van de samenwerking tussen een aangestelde van Student Verhuis Service en de klant en/of zijn helper(s).</item>
+        <item>Schade aan planten, schilderijen, aquariums, waterbedden, dieren en trapzalen blijft steeds van de aansprakelijkheid van Student Verhuis Service uitgesloten. Er mag niet meer dan 20% breekbare materialen vervoerd worden per wagen.</item>
+        <item>Gewone mechanische, elektrische en elektronische ontregelingen zonder uitwendige oorzaak zijn uitgesloten van de aansprakelijkheid van Student Verhuis Service.</item>
+        <item>De verhuizers behouden altijd het recht om pauze te nemen gedurende de verhuizing. Deze pauze wordt niet in rekening gebracht. </item>
+        <item>Wij behouden ten alle tijden het recht om het vervoer van potten aarde/planten en dieren te weigeren.</item>
+        <item>Wij gaan er van uit dat de klant gereedschap heeft voor eventueel (de)montage. Wanneer dit niet het geval is kan men bij ons professioneel gereedschap huren voor €15,- ex. btw.</item>
+        <item>Bij bestelling van uw verhuizing gaat u automatisch akkoord met onze algemene voorwaarden zoals hierboven vermeld.</item>
+
     </string-array>
 
 </resources>

@@ -20,6 +20,12 @@
             android:name="com.example.app.factuurActivity"
             android:label="@string/title_activity_factuur" >
         </activity>
+
+        <activity
+            android:name="com.example.app.termsActivity"
+            android:label="@string/title_activity_terms" >
+        </activity>
+
     </application>
 
 </manifest>

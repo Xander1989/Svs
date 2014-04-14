@@ -1,51 +1,55 @@
 package com.example.app;
 
 
-import java.util.ArrayList;
-import java.util.List;
+
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
-import android.widget.Toast;
+import android.widget.EditText;
 
-public class factuurActivity extends Activity {
 
-    private Spinner spinner1, spinner2;
-    private Button btnSubmit;
+
+public class factuurActivity extends Activity implements OnClickListener{
+
+    private static double verhuiswagen ;
+    private static double verhuizers ;
+    private static double verhuislift ;
+    private static double aanhanger ;
+
+    EditText text1;
+    EditText text2;
+    EditText text3;
+    EditText text4;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_factuur);
 
-        addListenerOnButton();
+        text1= (EditText) findViewById(R.id.spinner1);
+        text2= (EditText) findViewById(R.id.spinner2);
+        text3= (EditText) findViewById(R.id.spinner3);
+        text4= (EditText) findViewById(R.id.spinner4);
+        Button btnSubmit = (Button) findViewById(R.id.btnSubmit);
+        btnSubmit.setOnClickListener(this);
 
     }
 
-    // get the selected dropdown list value
-    public void addListenerOnButton() {
+    public void onClick(View v) {
 
-        spinner1 = (Spinner) findViewById(R.id.spinner1);
-        spinner2 = (Spinner) findViewById(R.id.spinner2);
-        btnSubmit = (Button) findViewById(R.id.btnSubmit);
-
-        btnSubmit.setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                Toast.makeText(factuurActivity.this,
-                        "OnClickListener : " +
-                                "\nSpinner 1 : "+ String.valueOf(spinner1.getSelectedItem()) +
-                                "\nSpinner 2 : "+ String.valueOf(spinner2.getSelectedItem()),
-                        Toast.LENGTH_SHORT).show();
-            }
-
-        });
+        Intent intent = new Intent(this, resultActivity.class);
+        intent.putExtra("verhuiswagen", Double.parseDouble(text1.getText().toString()));
+        intent.putExtra("verhuizer", Double.parseDouble(text2.getText().toString()));
+        intent.putExtra("verhuislift", Double.parseDouble(text3.getText().toString()));
+        intent.putExtra("aanhanger", Double.parseDouble(text4.getText().toString()));
+        startActivity(intent);
     }
+
 }
+
+
 

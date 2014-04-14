@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.app.resultActivity$PlaceholderFragment">
+
+    <TextView
+        android:text="@string/verhuiswagens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verhuiswagen"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:text="@string/verhuizer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verhuizer"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/verhuiswagen"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:text="@string/verhuislift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verhuislift"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/verhuizer"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:text="@string/aanhanger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aanhanger"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/verhuislift"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:text="@string/kilometers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kilometers"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/aanhanger"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:text="@string/bedragen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bedragen"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/kilometers"
+        android:layout_marginTop="40dp" />
+
+
+    <TextView
+        android:text="@string/toeslag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toeslag"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/bedragen"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:text="@string/btw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btw"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/toeslag"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:text="@string/totaal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/totaal"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/btw"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:id="@+id/verhuiswagenvalue"
+        android:layout_marginRight="36dp"
+        android:layout_above="@+id/verhuizer"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:id="@+id/verhuizervalue"
+        android:layout_alignTop="@+id/verhuizer"
+        android:layout_alignLeft="@+id/verhuiswagenvalue"
+        android:layout_alignStart="@+id/verhuiswagenvalue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:id="@+id/verhuisliftvalue"
+        android:layout_alignTop="@+id/verhuislift"
+        android:layout_alignLeft="@+id/aanhangervalue"
+        android:layout_alignStart="@+id/aanhangervalue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:id="@+id/aanhangervalue"
+        android:layout_above="@+id/kilometers"
+        android:layout_alignLeft="@+id/verhuiswagenvalue"
+        android:layout_alignStart="@+id/verhuiswagenvalue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:id="@+id/kilometersvalue"
+        android:layout_above="@+id/bedragen"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:id="@+id/subtotaalvalue"
+        android:layout_above="@+id/toeslag"
+        android:layout_alignLeft="@+id/toeslagvalue"
+        android:layout_alignStart="@+id/toeslagvalue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:id="@+id/toeslagvalue"
+        android:layout_above="@+id/btw"
+        android:layout_alignLeft="@+id/btwvalue"
+        android:layout_alignStart="@+id/btwvalue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:id="@+id/btwvalue"
+        android:layout_above="@+id/totaal"
+        android:layout_alignLeft="@+id/totaalvalue"
+        android:layout_alignStart="@+id/totaalvalue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:id="@+id/totaalvalue"
+        android:layout_alignTop="@+id/totaal"
+        android:layout_alignRight="@+id/kilometersvalue"
+        android:layout_alignEnd="@+id/kilometersvalue" />
+
+
+</RelativeLayout>

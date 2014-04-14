@@ -15,6 +15,10 @@
     <string name="aanhanger">Aanhanger</string>
     <string name="kilometers">Kilometers</string>
     <string name="weekendtarief">Weekend tarief</string>
+    <string name="bedragen">Bedrag</string>
+    <string name="toeslag">Toeslag</string>
+    <string name="btw">BTW</string>
+    <string name="totaal">Totaal</string>
 
     <string-array name="verhuiswagen">
         <item>0</item>

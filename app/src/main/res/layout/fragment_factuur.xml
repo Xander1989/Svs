@@ -84,44 +84,51 @@
         android:id="@+id/spinner2"
         android:layout_width="50dp"
         android:layout_height="35dp"
+        android:inputType="numberDecimal"
         android:layout_alignTop="@+id/verhuizer"
         android:layout_alignLeft="@+id/spinner1"
-        android:layout_alignStart="@+id/spinner1" />
+        android:layout_alignStart="@+id/spinner1"
+        android:numeric="decimal" />
 
     <EditText
         android:id="@+id/spinner3"
         android:layout_width="50dp"
         android:layout_height="35dp"
+        android:inputType="numberDecimal"
         android:layout_alignTop="@+id/verhuislift"
         android:layout_alignLeft="@+id/spinner2"
-        android:layout_alignStart="@+id/spinner2" />
+        android:layout_alignStart="@+id/spinner2"
+        android:numeric="decimal" />
 
     <EditText
         android:id="@+id/spinner4"
         android:layout_width="50dp"
         android:layout_height="35dp"
+        android:inputType="numberDecimal"
         android:layout_alignTop="@+id/aanhanger"
         android:layout_alignLeft="@+id/spinner3"
-        android:layout_alignStart="@+id/spinner3" />
+        android:layout_alignStart="@+id/spinner3"
+        android:numeric="decimal" />
 
 
     <EditText
         android:layout_width="50dp"
         android:layout_height="35dp"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:ems="10"
-        android:id="@+id/invoer"
+        android:id="@+id/spinner5"
         android:layout_alignTop="@+id/kilometers"
         android:layout_alignLeft="@+id/spinner4"
-        android:layout_alignStart="@+id/spinner4" />
+        android:layout_alignStart="@+id/spinner4"
+        android:numeric="decimal" />
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/checkBox"
         android:layout_alignTop="@+id/weekendtarief"
-        android:layout_alignLeft="@+id/invoer"
-        android:layout_alignStart="@+id/invoer" />
+        android:layout_alignLeft="@+id/spinner5"
+        android:layout_alignStart="@+id/spinner5" />
 
     <Button
         android:id="@+id/btnSubmit"

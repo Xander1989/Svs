@@ -76,7 +76,7 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:layout_below="@+id/bedragen"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="15dp" />
 
     <TextView
         android:text="@string/btw"
@@ -86,7 +86,7 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:layout_below="@+id/toeslag"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="15dp" />
 
     <TextView
         android:text="@string/totaal"
@@ -96,98 +96,115 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:layout_below="@+id/btw"
-        android:layout_marginTop="40dp" />
+        android:layout_marginTop="15dp" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="aa"
         android:textSize="20dp"
         android:id="@+id/verhuiswagenvalue"
-        android:layout_marginRight="36dp"
+        android:layout_marginRight="50dp"
         android:layout_above="@+id/verhuizer"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="aa"
         android:textSize="20dp"
         android:id="@+id/verhuizervalue"
         android:layout_alignTop="@+id/verhuizer"
         android:layout_alignLeft="@+id/verhuiswagenvalue"
-        android:layout_alignStart="@+id/verhuiswagenvalue" />
+        android:layout_alignStart="@+id/verhuiswagenvalue"
+        android:layout_alignRight="@+id/aanhangervalue"
+        android:layout_alignEnd="@+id/aanhangervalue" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="aa"
         android:textSize="20dp"
         android:id="@+id/verhuisliftvalue"
-        android:layout_alignTop="@+id/verhuislift"
-        android:layout_alignLeft="@+id/aanhangervalue"
-        android:layout_alignStart="@+id/aanhangervalue" />
+        android:layout_above="@+id/aanhanger"
+        android:layout_alignLeft="@+id/verhuizervalue"
+        android:layout_alignStart="@+id/verhuizervalue"
+        android:layout_alignRight="@+id/aanhangervalue"
+        android:layout_alignEnd="@+id/aanhangervalue" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="aa"
         android:textSize="20dp"
         android:id="@+id/aanhangervalue"
         android:layout_above="@+id/kilometers"
         android:layout_alignLeft="@+id/verhuiswagenvalue"
-        android:layout_alignStart="@+id/verhuiswagenvalue" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="20dp"
-        android:id="@+id/kilometersvalue"
-        android:layout_above="@+id/bedragen"
+        android:layout_alignStart="@+id/verhuiswagenvalue"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="aa"
+        android:textSize="20dp"
+        android:id="@+id/kilometersvalue"
+        android:layout_alignTop="@+id/kilometers"
+        android:layout_alignLeft="@+id/aanhangervalue"
+        android:layout_alignStart="@+id/aanhangervalue"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="aa"
         android:textSize="20dp"
         android:id="@+id/subtotaalvalue"
         android:layout_above="@+id/toeslag"
-        android:layout_alignLeft="@+id/toeslagvalue"
-        android:layout_alignStart="@+id/toeslagvalue" />
+        android:layout_alignLeft="@+id/kilometersvalue"
+        android:layout_alignStart="@+id/kilometersvalue"
+        android:layout_alignRight="@+id/kilometersvalue"
+        android:layout_alignEnd="@+id/kilometersvalue" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="aa"
         android:textSize="20dp"
         android:id="@+id/toeslagvalue"
-        android:layout_above="@+id/btw"
-        android:layout_alignLeft="@+id/btwvalue"
-        android:layout_alignStart="@+id/btwvalue" />
+        android:layout_alignTop="@+id/toeslag"
+        android:layout_alignLeft="@+id/subtotaalvalue"
+        android:layout_alignStart="@+id/subtotaalvalue"
+        android:layout_alignRight="@+id/kilometersvalue"
+        android:layout_alignEnd="@+id/kilometersvalue" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="aa"
         android:textSize="20dp"
         android:id="@+id/btwvalue"
-        android:layout_above="@+id/totaal"
-        android:layout_alignLeft="@+id/totaalvalue"
-        android:layout_alignStart="@+id/totaalvalue" />
+        android:layout_alignTop="@+id/btw"
+        android:layout_alignLeft="@+id/toeslagvalue"
+        android:layout_alignStart="@+id/toeslagvalue"
+        android:layout_alignRight="@+id/kilometersvalue"
+        android:layout_alignEnd="@+id/kilometersvalue" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="aa"
         android:textSize="20dp"
         android:id="@+id/totaalvalue"
         android:layout_alignTop="@+id/totaal"
         android:layout_alignRight="@+id/kilometersvalue"
-        android:layout_alignEnd="@+id/kilometersvalue" />
+        android:layout_alignEnd="@+id/kilometersvalue"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/btwvalue"
+        android:layout_alignStart="@+id/btwvalue" />
 
 
 </RelativeLayout>

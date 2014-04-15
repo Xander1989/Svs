@@ -23,6 +23,7 @@ public class factuurActivity extends Activity implements OnClickListener{
     EditText text2;
     EditText text3;
     EditText text4;
+    EditText text5;
 
 
     @Override
@@ -34,6 +35,7 @@ public class factuurActivity extends Activity implements OnClickListener{
         text2= (EditText) findViewById(R.id.spinner2);
         text3= (EditText) findViewById(R.id.spinner3);
         text4= (EditText) findViewById(R.id.spinner4);
+        text5= (EditText) findViewById(R.id.spinner5);
         Button btnSubmit = (Button) findViewById(R.id.btnSubmit);
         btnSubmit.setOnClickListener(this);
 
@@ -46,6 +48,7 @@ public class factuurActivity extends Activity implements OnClickListener{
         intent.putExtra("verhuizer", Double.parseDouble(text2.getText().toString()));
         intent.putExtra("verhuislift", Double.parseDouble(text3.getText().toString()));
         intent.putExtra("aanhanger", Double.parseDouble(text4.getText().toString()));
+        intent.putExtra("kilometers", Double.parseDouble(text5.getText().toString()));
         startActivity(intent);
     }
 

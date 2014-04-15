@@ -22,12 +22,12 @@ public class termsActivity extends Activity {
         // Find the ListView resource.
         mainListView = (ListView) findViewById( R.id.mainListView );
 
-        // Create and populate a List of planet names.
+        // Create and populate the list.
         String[] values = getResources().getStringArray(R.array.voorwaarden);
         ArrayList<String> voorwaarden = new ArrayList<String>();
         voorwaarden.addAll( Arrays.asList(values) );
 
-        // Create ArrayAdapter using the planet list.
+        // Create ArrayAdapter using the list from strings.xml.
         listAdapter = new ArrayAdapter<String>(this, R.layout.simplerow, voorwaarden);
 
         // Set the ArrayAdapter as the ListView's adapter.

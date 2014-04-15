@@ -9,21 +9,19 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.CheckBox;
 
 
 
 public class factuurActivity extends Activity implements OnClickListener{
-
-    private static double verhuiswagen ;
-    private static double verhuizers ;
-    private static double verhuislift ;
-    private static double aanhanger ;
 
     EditText text1;
     EditText text2;
     EditText text3;
     EditText text4;
     EditText text5;
+    CheckBox checkBox;
+    int a;
 
 
     @Override
@@ -37,11 +35,20 @@ public class factuurActivity extends Activity implements OnClickListener{
         text4= (EditText) findViewById(R.id.spinner4);
         text5= (EditText) findViewById(R.id.spinner5);
         Button btnSubmit = (Button) findViewById(R.id.btnSubmit);
+        checkBox = (CheckBox) findViewById(R.id.weekend);
         btnSubmit.setOnClickListener(this);
 
     }
 
     public void onClick(View v) {
+
+        if(((CheckBox) checkBox).isChecked()){
+            a=1;
+        }
+        else{
+            a=0;
+        }
+
 
         Intent intent = new Intent(this, resultActivity.class);
         intent.putExtra("verhuiswagen", Double.parseDouble(text1.getText().toString()));
@@ -49,6 +56,7 @@ public class factuurActivity extends Activity implements OnClickListener{
         intent.putExtra("verhuislift", Double.parseDouble(text3.getText().toString()));
         intent.putExtra("aanhanger", Double.parseDouble(text4.getText().toString()));
         intent.putExtra("kilometers", Double.parseDouble(text5.getText().toString()));
+        intent.putExtra("checkbox", a);
         startActivity(intent);
     }
 

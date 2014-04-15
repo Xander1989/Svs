@@ -27,6 +27,7 @@ public class resultActivity extends ActionBarActivity {
     double toeslag;
     double btw;
     double totaal;
+    int a;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +40,7 @@ public class resultActivity extends ActionBarActivity {
         verhuislift1 = intent.getDoubleExtra("verhuislift", 0.0);
         aanhanger1 = intent.getDoubleExtra("aanhanger", 0.0);
         kilometers1 = intent.getDoubleExtra("kilometers", 0.0);
+        a=intent.getIntExtra("checkbox", 0);
 
         TextView verhuiswagenvalue;
         verhuiswagenvalue = (TextView) findViewById(R.id.verhuiswagenvalue);
@@ -83,9 +85,14 @@ public class resultActivity extends ActionBarActivity {
 
 
         subtotaal = wagen + verhuizer + verhuislift + aanhanger + kilometers;
-        toeslag = subtotaal * 0.25;
-        btw = subtotaal * 0.21;
-        totaal = subtotaal + btw;
+        if(a==1){
+            toeslag = subtotaal * 0.25;
+        }
+        else{
+            toeslag = 0;
+        }
+        btw = (subtotaal + toeslag) * 0.21;
+        totaal = subtotaal + toeslag + btw;
 
 
         verhuiswagenvalue.setText("" + Double.valueOf((dec.format(wagen))));

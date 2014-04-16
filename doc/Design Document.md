@@ -46,22 +46,23 @@ controls the page where the results of the invoice are viewed
 - public class resultActivity extends ActionBarActivity:
 	
 	
-	- initializes all field variables: 
-	>         double verhuiswagen1;
-	>     	double verhuizers1;
-	>     	double verhuislift1;
-	>     	double aanhanger1;
-	>     	double kilometers1;
-	>     	double wagen;
-	>     	double verhuizer;
-	>         double verhuislift;
-	>     	double aanhanger;
-	>     	double kilometers;
-	>     	double subtotaal;
-	>     	double toeslag;
-	>     	double btw;
-	>     	double totaal;
-	>     	int a;
+	- initializes all field variables:
+		- double verhuiswagen1;
+    	- double verhuizers1;
+    	- double verhuislift1;
+    	- double aanhanger1;
+    	- double kilometers1;
+    	- double wagen;
+    	- double verhuizer;
+    	- double verhuislift;
+    	- double aanhanger;
+    	- double kilometers;
+    	- double subtotaal;
+    	- double toeslag;
+    	- double btw;
+    	- double totaal;
+    	- int a; 
+	
 	
 - public void onCreate(Bundle savedInstanceState):
 	- initializes layout screen

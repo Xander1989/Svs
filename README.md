@@ -13,5 +13,5 @@ An aplication wich enables employees to easily calculate invoices for customers 
 ## Frameworks / languages / libraries ##
 - Java
 - Xml
-- SQLite3
+
 

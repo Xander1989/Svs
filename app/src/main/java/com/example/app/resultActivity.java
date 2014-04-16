@@ -80,6 +80,7 @@ public class resultActivity extends ActionBarActivity {
 
         DecimalFormat dec = new DecimalFormat("#.00");
         DecimalFormatSymbols dfs = new DecimalFormatSymbols();
+
         dfs.setDecimalSeparator('.');
         dec.setDecimalFormatSymbols(dfs);
 

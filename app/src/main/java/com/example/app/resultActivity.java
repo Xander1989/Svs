@@ -31,7 +31,7 @@ public class resultActivity extends ActionBarActivity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_result);
+        setContentView(R.layout.result);
 
         Intent intent = getIntent();
 

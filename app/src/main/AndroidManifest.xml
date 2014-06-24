@@ -31,6 +31,16 @@
             android:label="result" >
         </activity>
 
+        <activity
+            android:name="com.example.app.loginActivity"
+            android:label="login" >
+        </activity>
+
+        <activity
+            android:name="com.example.app.artikelActivity"
+            android:label="Artikel" >
+        </activity>
+
     </application>
 
 </manifest>

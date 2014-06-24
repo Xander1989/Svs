@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@android:id/tabhost"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:id="@+id/Factuur"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinner"
+
+                                              />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/rij1_1"
+                        android:layout_marginBottom="20dp"
+                        android:layout_toRightOf="@+id/spinner"
+                        android:layout_marginLeft="26dp" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/rij1_2"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="26dp"
+                        android:layout_toRightOf="@+id/rij1_1" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText"
+                        android:text="0"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/rij1_2"
+                        android:layout_marginLeft="41dp" />
+
+                    <Spinner
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinner2"
+                        android:layout_below="@id/rij1_1"
+                        />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/rij2_1"
+                        android:layout_marginBottom="20dp"
+                        android:layout_below="@id/rij1_1"
+                        android:layout_toRightOf="@+id/spinner2"
+                        android:layout_marginLeft="26dp" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/rij2_2"
+                        android:layout_below="@id/rij1_1"
+                        android:layout_marginLeft="26dp"
+                        android:layout_toRightOf="@+id/rij2_1" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText2"
+                        android:text="0"
+                        android:layout_below="@id/rij1_1"
+                        android:layout_toRightOf="@+id/rij2_2"
+                        android:layout_marginLeft="41dp" />
+
+                    <Spinner
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner3"
+                    android:layout_below="@id/rij2_1"
+                    />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/rij3_1"
+                        android:layout_marginBottom="20dp"
+                        android:layout_below="@id/rij2_1"
+                        android:layout_toRightOf="@+id/spinner3"
+                        android:layout_marginLeft="26dp" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/rij3_2"
+                        android:layout_below="@id/rij2_1"
+                        android:layout_marginLeft="26dp"
+                        android:layout_toRightOf="@+id/rij3_1" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText3"
+                        android:text="0"
+                        android:layout_below="@id/rij2_1"
+                        android:layout_toRightOf="@+id/rij3_2"
+                        android:layout_marginLeft="41dp" />
+
+                    <Spinner
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinner4"
+                        android:layout_below="@id/rij3_1"
+                        />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/rij4_1"
+                        android:layout_marginBottom="20dp"
+                        android:layout_below="@id/rij3_1"
+                        android:layout_toRightOf="@+id/spinner4"
+                        android:layout_marginLeft="26dp" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/rij4_2"
+                        android:layout_below="@id/rij3_1"
+                        android:layout_marginLeft="26dp"
+                        android:layout_toRightOf="@+id/rij4_1" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText4"
+                        android:text="0"
+                        android:layout_below="@id/rij3_1"
+                        android:layout_toRightOf="@+id/rij4_2"
+                        android:layout_marginLeft="41dp" />
+
+                    <Spinner
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinner5"
+                        android:layout_below="@id/rij4_1"
+                        />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/rij5_1"
+                        android:layout_marginBottom="20dp"
+                        android:layout_below="@id/rij4_1"
+                        android:layout_toRightOf="@+id/spinner5"
+                        android:layout_marginLeft="26dp" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/rij5_2"
+                        android:layout_below="@id/rij4_1"
+                        android:layout_marginLeft="26dp"
+                        android:layout_toRightOf="@+id/rij5_1" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText5"
+                        android:text="0"
+                        android:layout_below="@id/rij4_1"
+                        android:layout_toRightOf="@+id/rij5_2"
+                        android:layout_marginLeft="41dp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bereken"
+                        android:onClick="result"
+                        android:id="@+id/button_bereken"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="40dp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Artikelen"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Code"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/code"
+                        android:focusableInTouchMode="true" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Artikel_naam"
+                        android:textStyle="bold"
+                        android:id="@+id/naam"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/code" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Prijs"
+                        android:textStyle="bold"
+                        android:id="@+id/prijs"
+                        android:layout_marginRight="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/listView2"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/naam"
+                        android:layout_gravity="center_horizontal" />
+
+
+                    </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/resultaat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="4"
+                        android:id="@+id/tableLayout"
+                        android:layout_below="@+id/textView2"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="33dp">
+
+                        <TableRow
+                            android:gravity="center_horizontal"
+                            android:id="@+id/tableHead">
+                            <TextView
+                                android:text="Code"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                            <TextView
+                                android:text="Artikel"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                            <TextView
+                                android:text="Stuk prijs"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                            <TextView
+                                android:text="Prijs"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:gravity="center_horizontal"
+                            android:id="@+id/row1">
+                            <TextView
+                                android:id="@+id/code1"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                            <TextView
+                                android:id="@+id/artikel1"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                            <TextView
+                                android:id="@+id/stukprijs1"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                            <TextView
+                                android:id="@+id/prijs1"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:gravity="center_horizontal"
+                            android:id="@+id/row2">
+                            <TextView
+                                android:id="@+id/code2"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                            <TextView
+                                android:id="@+id/artikel2"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                            <TextView
+                                android:id="@+id/stukprijs2"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                            <TextView
+                                android:id="@+id/prijs2"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:gravity="center_horizontal"
+                            android:id="@+id/row3">
+                            <TextView
+                                android:id="@+id/code3"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                            <TextView
+                                android:id="@+id/artikel3"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                            <TextView
+                                android:id="@+id/stukprijs3"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                            <TextView
+                                android:id="@+id/prijs3"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:gravity="center_horizontal"
+                            android:id="@+id/row4">
+                            <TextView
+                                android:id="@+id/code4"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                            <TextView
+                                android:id="@+id/artikel4"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                            <TextView
+                                android:id="@+id/stukprijs4"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                            <TextView
+                                android:id="@+id/prijs4"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:gravity="center_horizontal"
+                            android:id="@+id/row5">
+                            <TextView
+                                android:id="@+id/code5"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                            <TextView
+                                android:id="@+id/artikel5"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                            <TextView
+                                android:id="@+id/stukprijs5"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                            <TextView
+                                android:id="@+id/prijs5"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <TextView
+                        android:text="@string/bedragen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bedragen"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@+id/tableLayout"
+                        android:layout_marginTop="40dp" />
+
+                    <TextView
+                        android:text="@string/btw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btw"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@+id/bedragen"
+                        android:layout_marginTop="15dp" />
+
+                    <TextView
+                        android:text="@string/totaal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/totaal"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@+id/btw"
+                        android:layout_marginTop="15dp" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:id="@+id/subtotaalvalue"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_below="@+id/tableLayout"
+                        android:layout_toRightOf="@id/bedragen"
+                        />
+
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:id="@+id/btwvalue"
+                        android:layout_alignTop="@+id/btw"
+                        android:layout_alignLeft="@+id/subtotaalvalue"
+                        android:layout_alignStart="@+id/subtotaalvalue"
+                        android:layout_alignRight="@+id/kilometersvalue"
+                        android:layout_alignEnd="@+id/kilometersvalue" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:id="@+id/totaalvalue"
+                        android:layout_alignTop="@+id/totaal"
+                        android:layout_alignRight="@+id/kilometersvalue"
+                        android:layout_alignEnd="@+id/kilometersvalue"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignLeft="@+id/btwvalue"
+                        android:layout_alignStart="@+id/btwvalue" />
+
+                </RelativeLayout>
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+
+
+</RelativeLayout>

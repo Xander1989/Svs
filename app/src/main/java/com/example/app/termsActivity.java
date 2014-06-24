@@ -17,7 +17,7 @@ public class termsActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_terms);
+        setContentView(R.layout.terms);
 
         // Find the ListView resource.
         mainListView = (ListView) findViewById( R.id.mainListView );

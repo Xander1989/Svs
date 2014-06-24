@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@android:id/tabhost">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:id="@+id/addArtikel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/addartikel"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/textView"
+                        android:layout_gravity="center_horizontal" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="artikel_code"
+                        android:id="@+id/artikelcode" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="artikel_naam"
+                        android:id="@+id/artikelnaam"
+                        android:layout_gravity="center_horizontal" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="artikel_prijs, values need to be seperated with a dot !"
+                        android:id="@+id/artikelprijs"
+                        android:layout_gravity="center_horizontal" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="add artikel"
+                        android:id="@+id/artikel_button"
+                        android:layout_marginTop="35dp"
+                        android:layout_gravity="center_horizontal" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/artikelList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Code"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/code"
+                        android:focusableInTouchMode="true" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Artikel_naam"
+                        android:textStyle="bold"
+                        android:id="@+id/naam"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/code" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Prijs"
+                        android:textStyle="bold"
+                        android:id="@+id/prijs"
+                        android:layout_marginRight="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/listView"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/naam"
+                        android:layout_gravity="center_horizontal" />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+</LinearLayout>

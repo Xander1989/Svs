@@ -87,5 +87,17 @@ public class artikelActivity extends Activity {
 
     }
 
+    public void deleteEntry(View view){
+
+        DatabaseHandler db = new DatabaseHandler(this);
+
+        EditText delete = (EditText) findViewById(R.id.delete_entry);
+        int a = Integer.parseInt(delete.getText().toString());
+        db.deleteArtikel(a);
+        Toast.makeText(getApplicationContext(), "Entry has been removed from your artikelen", Toast.LENGTH_SHORT).show();
+        populateList();
+
+    }
+
 
 }

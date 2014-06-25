@@ -492,6 +492,16 @@
                         android:layout_alignLeft="@+id/btwvalue"
                         android:layout_alignStart="@+id/btwvalue" />
 
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Maak Definitief"
+                        android:id="@+id/verzenden"
+                        android:onClick="sendEmail"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="20dp" />
+
                 </RelativeLayout>
 
 

@@ -17,9 +17,10 @@
         android:singleLine="false"
         android:text="@string/button_new"
         android:onClick="newFactuur"
-        android:layout_marginBottom="25dp"
-        android:layout_above="@+id/imageView"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginTop="71dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
 
     <Button
         android:layout_width="150dp"
@@ -28,8 +29,7 @@
         android:id="@+id/button2"
         android:onClick="terms"
         android:layout_below="@+id/button"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button"/>
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"

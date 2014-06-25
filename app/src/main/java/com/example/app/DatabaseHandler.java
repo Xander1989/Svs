@@ -89,34 +89,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     }
 
-    public void deleteArtikel(Artikel artikel){
+    public void deleteArtikel(int id){
         SQLiteDatabase db = getWritableDatabase();
-        db.delete(TABLE_ARTIKELEN, KEY_CODE + "=?", new String[] {String.valueOf(artikel.getCode()) });
+        db.delete(TABLE_ARTIKELEN, KEY_ID + "=?", new String[] {String.valueOf(id) });
         db.close();
-    }
-
-    public int getArtikelCount() {
-        SQLiteDatabase db = getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * FROM" + TABLE_ARTIKELEN, null);
-
-
-        return cursor.getCount();
-    }
-
-    public List<Artikel> getAllArtikelen() {
-        List<Artikel> artikelen = new ArrayList<Artikel>();
-
-        SQLiteDatabase db = getWritableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * FROM" + TABLE_ARTIKELEN, null);
-
-        if (cursor.moveToFirst()) {
-            do{
-                Artikel artikel = new Artikel(Integer.parseInt(cursor.getString(0)), Integer.parseInt(cursor.getString(1)), cursor.getString(2), Integer.parseInt(cursor.getString(3)));
-                artikelen.add(artikel);
-            }
-            while (cursor.moveToNext());
-        }
-        return artikelen;
     }
 
 }

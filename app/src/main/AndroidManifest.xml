@@ -27,11 +27,6 @@
         </activity>
 
         <activity
-            android:name="com.example.app.resultActivity"
-            android:label="result" >
-        </activity>
-
-        <activity
             android:name="com.example.app.loginActivity"
             android:label="login" >
         </activity>

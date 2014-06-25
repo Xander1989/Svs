@@ -21,7 +21,7 @@
     <string name="totaal">Totaal</string>
     <string name="btn_txt">Log in</string>
     <string name="manager">Manager only!</string>
-    <string name="artikelen">Settings</string>
+    <string name="artikelen">Artikelen</string>
     <string name="addartikel">Fill in values to add artikel</string>
 
     <string-array name="verhuiswagen">

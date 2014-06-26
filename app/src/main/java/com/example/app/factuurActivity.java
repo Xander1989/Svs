@@ -71,17 +71,15 @@ public class factuurActivity extends Activity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
-            public void onItemSelected(AdapterView<?> parent, View selectedItemview ,
-            int pos, long id) {
+            public void onItemSelected(AdapterView<?> parent, View selectedItemview,
+                                       int pos, long id) {
 
-                if(pos==0){
+                if (pos == 0) {
                     TextView naam = (TextView) findViewById(R.id.rij1_1);
                     naam.setText("Artikel");
                     TextView prijs = (TextView) findViewById(R.id.rij1_2);
                     prijs.setText("€");
-                }
-
-                else{
+                } else {
                     Artikel artikel = db.getArtikel(pos);
                     a = pos;
                     TextView naam = (TextView) findViewById(R.id.rij1_1);
@@ -380,11 +378,18 @@ public class factuurActivity extends Activity {
     }
 
     public void sendEmail (View view){
+        String[] resultaat = new String[]{artikel_1.getArtikel(), artikel_2.getArtikel(), artikel_3.getArtikel(), artikel_4.getArtikel(), artikel_5.getArtikel()};
+        Double[] prijsresultaat = new Double[] {subtotaal1, subtotaal2, subtotaal3, subtotaal4, subtotaal5, Subtotaal, BTW, PrijsTotaal};
+        String[] s = new String[prijsresultaat.length];
+
+        for (int i = 0; i < s.length; i++)
+            s[i] = String.valueOf(prijsresultaat[i]);
+
         Intent i = new Intent(Intent.ACTION_SEND);
         i.setType("message/rfc822");
         i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"mark.vangerwen@gmail.com"});
         i.putExtra(Intent.EXTRA_SUBJECT, "Nieuwe Factuur");
-        i.putExtra(Intent.EXTRA_TEXT   , "test");
+        i.putExtra(Intent.EXTRA_TEXT   , s);
         try {
             startActivity(Intent.createChooser(i, "Send mail..."));
         } catch (android.content.ActivityNotFoundException ex) {
